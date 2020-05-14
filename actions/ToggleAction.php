@@ -1,5 +1,5 @@
 <?php
-namespace dixonstarter\togglecolumn\actions;
+namespace porcelanosa\togglecolumn\actions;
 
 use Yii;
 use yii\base\Action;
