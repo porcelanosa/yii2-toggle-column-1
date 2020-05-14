@@ -1,5 +1,5 @@
 <?php
-namespace dixonstarter\togglecolumn;
+namespace porcelanosa\togglecolumn;
 
 /**
  *
