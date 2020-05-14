@@ -1,6 +1,6 @@
 <?php
 
-namespace dixonstarter\togglecolumn;
+namespace porcelanosa\togglecolumn;
 
 use yii\helpers\ArrayHelper;
 /**
