@@ -1,5 +1,5 @@
 {
-    "name": "dixonstarter/yii2-toggle-column",
+    "name": "porcelanosa/yii2-toggle-column",
     "description": "yii2 toggle column for update in gridview",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","toggle column","gridview"],
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "dixonstarter\\togglecolumn\\": ""
+            "porcelanosa\\togglecolumn\\": ""
         }
     }
 }
