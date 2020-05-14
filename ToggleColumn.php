@@ -1,10 +1,10 @@
 <?php
 
-namespace dixonstarter\togglecolumn;
+namespace porcelanosa\togglecolumn;
 
 use Yii;
 use Closure;
-use yii\helpers\Html;
+use yii\bootstrap4\Html;
 use yii\web\View;
 use yii\helpers\Url;
 use yii\grid\DataColumn;
