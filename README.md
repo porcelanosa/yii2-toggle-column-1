@@ -12,13 +12,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist dixonstarter/yii2-toggle-column "*"
+php composer.phar require --prefer-dist porcelanosa/yii2-toggle-column "*"
 ```
 
 or add
 
 ```
-"dixonstarter/yii2-toggle-column": "*"
+"porcelanosa/yii2-toggle-column": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -45,7 +45,7 @@ use yii\widgets\Pjax;
       //.....
       [
         'attribute'=>'status',
-        'class'=>'\dixonstarter\togglecolumn\ToggleColumn'
+        'class'=>'\porcelanosa\togglecolumn\ToggleColumn'
       ],
     ],
 ]); ?>
@@ -81,12 +81,12 @@ class PostController extends Controller
 ## Model
 
 ```php
-class Post extends \yii\db\ActiveRecord implements \dixonstarter\togglecolumn\ToggleActionInterface
+class Post extends \yii\db\ActiveRecord implements \porcelanosa\togglecolumn\ToggleActionInterface
 {
 
   // ....
 
-  use \dixonstarter\togglecolumn\ToggleActionTrait;
+  use \porcelanosa\togglecolumn\ToggleActionTrait;
   public function getToggleItems()
   {
     // custom array for toggle update
@@ -108,7 +108,7 @@ class Post extends \yii\db\ActiveRecord implements \dixonstarter\togglecolumn\To
 
     [
       'attribute'=>'status',
-      'class'=>'\dixonstarter\togglecolumn\ToggleColumn',
+      'class'=>'\porcelanosa\togglecolumn\ToggleColumn',
       'options'=>['style'=>'width:50px;'],
       'linkTemplateOn'=>'<a class="toggle-column" data-pjax="0" href="{url}">{label}</a>',
       'linkTemplateOff'=>'<a class="toggle-column" data-pjax="0" href="{url}">{label}</a>'
@@ -124,7 +124,7 @@ class Post extends \yii\db\ActiveRecord implements \dixonstarter\togglecolumn\To
 
   [
     'attribute'=>'status',
-    'class'=>'\dixonstarter\togglecolumn\ToggleColumn',
+    'class'=>'\porcelanosa\togglecolumn\ToggleColumn',
     'options'=>['style'=>'width:50px;'],
     'linkTemplateOn'=>'<a class="toggle-column btn btn-default btn-xs btn-block" data-pjax="0" href="{url}">{label}</a>',
     'linkTemplateOff'=>'<a class="toggle-column btn btn-default btn-xs btn-block" data-pjax="0" href="{url}">{label}</a>'
@@ -140,7 +140,7 @@ class Post extends \yii\db\ActiveRecord implements \dixonstarter\togglecolumn\To
 
 [
   'attribute'=>'status',
-  'class'=>'\dixonstarter\togglecolumn\ToggleColumn',
+  'class'=>'\porcelanosa\togglecolumn\ToggleColumn',
   'options'=>['style'=>'width:50px;'],
   'linkTemplateOn'=>'<a class="toggle-column btn btn-default btn-xs btn-block" data-pjax="0" href="{url}"><i  class="glyphicon glyphicon-ok"></i> </a>',
   'linkTemplateOff'=>'<a class="toggle-column btn btn-default btn-xs btn-block" data-pjax="0" href="{url}"><i  class="glyphicon glyphicon-remove"></i> </a>'
@@ -156,7 +156,7 @@ class Post extends \yii\db\ActiveRecord implements \dixonstarter\togglecolumn\To
 
 [
   'attribute'=>'status',
-  'class'=>'\dixonstarter\togglecolumn\ToggleColumn',
+  'class'=>'\porcelanosa\togglecolumn\ToggleColumn',
   'options'=>['style'=>'width:50px;'],
   'linkTemplateOn'=>'<a class="toggle-column btn btn-warning btn-xs " data-pjax="0" href="{url}"><i  class="glyphicon glyphicon-ok"></i> </a>',
   'linkTemplateOff'=>'<a class="toggle-column btn btn-default btn-xs " data-pjax="0" href="{url}"><i  class="glyphicon glyphicon-remove"></i> </a>'
@@ -172,7 +172,7 @@ class Post extends \yii\db\ActiveRecord implements \dixonstarter\togglecolumn\To
 
 [
   'attribute'=>'status',
-  'class'=>'\dixonstarter\togglecolumn\ToggleColumn',
+  'class'=>'\porcelanosa\togglecolumn\ToggleColumn',
   'options'=>['style'=>'width:50px;'],
   'linkTemplateOn'=>'<a class="toggle-column btn btn-default btn-xs btn-block" data-pjax="0" href="{url}"><i  class="glyphicon glyphicon-ok"></i> {label}</a>',
   'linkTemplateOff'=>'<a class="toggle-column btn btn-default btn-xs btn-block" data-pjax="0" href="{url}"><i  class="glyphicon glyphicon-remove"></i> {label}</a>'
@@ -188,7 +188,7 @@ class Post extends \yii\db\ActiveRecord implements \dixonstarter\togglecolumn\To
 
 [
   'attribute'=>'status',
-  'class'=>'\dixonstarter\togglecolumn\ToggleColumn',
+  'class'=>'\porcelanosa\togglecolumn\ToggleColumn',
   'options'=>['style'=>'width:50px;'],
   'linkTemplateOn'=>'<a class="toggle-column btn btn-primary btn-xs btn-block" data-pjax="0" href="{url}"><i  class="glyphicon glyphicon-ok"></i> {label}</a>',
   'linkTemplateOff'=>'<a class="toggle-column btn btn-default btn-xs btn-block" data-pjax="0" href="{url}"><i  class="glyphicon glyphicon-remove"></i> {label}</a>'
